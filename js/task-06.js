@@ -17,10 +17,9 @@ function createBoxes() {
   if (amount >= 1 && amount <= 100) {
     destroyBoxes();
 
-    const boxesArray = Array.from({ length: amount });
     let size = 30;
 
-    boxesArray.forEach(() => {
+    for (let i = 0; i < amount; i++) {
       const box = document.createElement('div');
 
       box.style.width = `${size}px`;
@@ -29,10 +28,10 @@ function createBoxes() {
 
       boxesDiv.appendChild(box);
       size += 10;
-    });
-
-    input.value = '';
+    }
   }
+
+  input.value = '';
 }
 
 function destroyBoxes() {

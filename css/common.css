@@ -21,13 +21,13 @@ body {
   list-style: none;
 }
 
-.gallery li {
+.gallery-item {
   width: calc((100% - 48px) / 3);
   overflow: hidden;
   margin: 0;
 }
 
-.gallery li img {
+.gallery-img {
   width: 360px;
   height: 300px;
   object-fit: cover;

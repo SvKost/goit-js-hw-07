@@ -12,14 +12,14 @@ const boxesDiv = document.querySelector('#boxes');
 createBtn.addEventListener('click', createBoxes);
 destroyBtn.addEventListener('click', destroyBoxes);
 
-function createBoxes() {
-  const amount = input.value;
-  if (amount >= 1 && amount <= 100) {
+function createBoxes(amount) {
+  const quantity = input.value;
+  if (quantity >= 1 && quantity <= 100) {
     destroyBoxes();
 
     let size = 30;
 
-    for (let i = 0; i < amount; i++) {
+    for (let i = 0; i < quantity; i++) {
       const box = document.createElement('div');
 
       box.style.width = `${size}px`;

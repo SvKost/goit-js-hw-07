@@ -8,10 +8,10 @@ form.addEventListener('submit', event => {
     password: elems.password.value.trim(),
   };
 
-  if (elems.email.value === '' || elems.password.value === '') {
+  if (data.email === '' || data.password === '') {
     alert('All form fields must be filled in');
   } else {
     console.log(data);
+    form.reset();
   }
-  form.reset();
 });
